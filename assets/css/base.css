@@ -1,0 +1,51 @@
+.main-content {
+    max-width: calc(100% - 24px);
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn {
+    display: inline-block;
+    color: #FFF;
+    text-align: center;
+    border-radius: 999px;
+    background: #171100;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 50px;
+    min-width: 118px;
+}
+.btn:hover {
+    opacity: 0.8;
+    transition: all .3s;
+    cursor: pointer;
+}
+.desc {
+    color: #5F5B53;
+    font-size: 1.8rem;
+    line-height: 1.66; /* 166.667% */
+}
+.heading-lv2 {
+    color: #171100;
+    font-family: var(--font-heading);
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 1.26; /* 126.316% */
+    letter-spacing: -0.76px;
+}
+/* dấu ... khi dài quá */
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp,1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.line-clamp.line-2{
+    --line-clamp:2;
+}
+.line-clamp.line-5 {
+    --line-clamp:4;
+}
+.break-all {
+    word-break: break-all;
+}
