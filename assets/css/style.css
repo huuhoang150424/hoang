@@ -47,8 +47,7 @@ body {
     padding: 8px 21px;
     font-size: 1.6rem;
 }
-.nav li.active a,
-.nav a:hover {
+.nav li.active a:hover{
     color: var(--word-color);
     text-shadow: 0.5px 0 0 currentColor;
     transition: 0.3s all;
@@ -59,11 +58,20 @@ body {
     bottom: 2px;
     content: "";
     display: block;
-    width: 12px;
+    width: 0;
     height: 2px;
     background-color: var(--word-color);
     border-radius: 1px;
+    transition: width 0.3s ease;
 }
+.nav li.active:hover a::after {
+    width: 70%; 
+}
+
+
+
+
+
 .header .btn-sign-up {
     min-width: 144px;
 }
